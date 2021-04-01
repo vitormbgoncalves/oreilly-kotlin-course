@@ -2,4 +2,4 @@
 
 Course available at O'Reilly!
 
-[Click here and access the course](https://learning.oreilly.com/videos/introduction-to-kotlin/9781491964125)
+[Click here and access the course](https://learning.oreilly.com/videos/introduction-to-kotlin/9781491964125)  
