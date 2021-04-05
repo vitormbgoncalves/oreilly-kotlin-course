@@ -1,6 +1,6 @@
 package com.github.vitormbgoncalves.kotlincourse.basics
 
-//renomear importacao de pacotes
+// renomear importacao de pacotes
 import com.github.vitormbgoncalves.kotlincourse.basics.utils.someUtility as someAditonalFunction
 
 /**

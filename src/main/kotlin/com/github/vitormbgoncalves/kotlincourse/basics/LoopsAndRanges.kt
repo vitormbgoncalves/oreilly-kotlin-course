@@ -9,7 +9,7 @@ package com.github.vitormbgoncalves.kotlincourse.basics
 
 fun main(args: Array<String>) {
 
-    for(a in 1..100) {
+    for (a in 1..100) {
         println(a)
     }
 
@@ -26,7 +26,6 @@ fun main(args: Array<String>) {
     }
 
     for (b in 100 downTo 1 step 5) {
-
     }
 
     val capitals = listOf("London", "Paris", "Rome", "Madrid")
