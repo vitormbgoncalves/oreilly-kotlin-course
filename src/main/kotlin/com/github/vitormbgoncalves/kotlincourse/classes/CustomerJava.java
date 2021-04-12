@@ -1,10 +1,12 @@
 package com.github.vitormbgoncalves.kotlincourse.classes;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
 /**
  *<p>
- *  Sample Java Class
+ *  Java Class Sample
  *</p>
  *<p>
  * @author Vitor Goncalves
@@ -39,6 +41,19 @@ public class CustomerJava {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void prettyPrint() {
+        System.out.printf("Id: %d - Name: %s", id, name);
+    }
+
+    public @NotNull
+    String neverNull() {
+        return "A String";
+    }
+
+    public String sometimesNull() {
+        return "A String";
     }
 
     @Override

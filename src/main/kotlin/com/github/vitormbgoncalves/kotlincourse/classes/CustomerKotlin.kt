@@ -1,5 +1,7 @@
 package com.github.vitormbgoncalves.kotlincourse.classes
 
+import java.io.IOException
+
 /**
  *  Kotlin Data Class
  *
@@ -8,9 +10,33 @@ package com.github.vitormbgoncalves.kotlincourse.classes
  */
 
 data class CustomerKotlin(var id: Int, var name: String, var email: String) {
+    @JvmField val someProperty = "Value"
     override fun toString(): String {
         return "{\"id\": $id, \"name\": $name}"
     }
+
+    @JvmOverloads fun changeStatus(status: Status = Status.Current) {
+
+    }
+
+    @JvmName("preferential") fun makePreferred() {
+
+    }
+
+    @Throws(IOException::class)fun loadStatistics(filename: String) {
+        if (filename == "") {
+            throw IOException("Filename cannot be blank")
+        }
+    }
+}
+
+fun CustomerKotlin.extension() {
+    
+}
+
+enum class Status {
+    Current,
+    Paste
 }
 
 fun main(args: Array<String>) {
