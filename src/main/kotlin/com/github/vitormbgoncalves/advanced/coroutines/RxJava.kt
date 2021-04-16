@@ -1,18 +1,18 @@
 package com.github.vitormbgoncalves.advanced.coroutines
 
+import retrofit2.http.GET
+import retrofit2.Retrofit
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Path
+import rx.Observable
+
 /**
  * RxJava in Kotlin
  *
  * @author Vitor Goncalves
  * @since 16.04.2021, sex, 18:33
  */
-
-import retrofit2.Retrofit
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
-import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.GET
-import retrofit2.http.Path
-import rx.Observable
 
 interface GitHub {
     @GET("orgs/{user}/repos")
