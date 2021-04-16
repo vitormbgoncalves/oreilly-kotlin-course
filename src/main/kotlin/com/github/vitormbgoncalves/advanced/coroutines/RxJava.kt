@@ -20,7 +20,7 @@ interface GitHub {
 }
 
 data class Repo(val name: String)
-fun hello(value: String = "It's me") {
+fun hello(value: String = "It's me!") {
 
 }
 fun main(args: Array<String>) {
